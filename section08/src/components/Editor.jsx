@@ -17,7 +17,7 @@ const Editor = ({ onCreate }) => {
 
   const onSubmit = () => {
     if (content === "") {
-      content.current.focus();
+      contentRef.current.focus();
       return;
     }
     onCreate(content);
