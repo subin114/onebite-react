@@ -1,0 +1,25 @@
+@import "../abstracts/variables";
+
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $main-border-color;
+    padding: $padding-base 0px;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $main-color;
+    }
+  }
+
+  .todo_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
