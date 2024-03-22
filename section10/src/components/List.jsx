@@ -13,9 +13,9 @@ const List = ({ todos, onUpdate, onDelete }) => {
     if (search === "") {
       return todos;
     }
-    return todos.filter((todo) => {
-      todo.content.toLowerCase().includes(search.toLowerCase());
-    });
+    return todos.filter((todo) =>
+      todo.content.toLowerCase().includes(search.toLowerCase())
+    );
   };
 
   const filteredTodos = getFilteredData();
@@ -32,7 +32,7 @@ const List = ({ todos, onUpdate, onDelete }) => {
       notDoneCount,
     };
   }, [todos]);
-  // 의존성 배열 : deps
+  // 의존성배열 : deps
 
   return (
     <div className="List">
