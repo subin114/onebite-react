@@ -5,6 +5,7 @@ import Diary from "./pages/Diary";
 import New from "./pages/New";
 import Notfound from "./pages/Notfound";
 import Button from "./components/Button";
+import Header from "./components/Header";
 
 import { getEmotionImage } from "./util/get-emotion-image";
 
@@ -20,9 +21,14 @@ function App() {
 
   return (
     <>
+      <Header
+        title={"Header"}
+        leftChild={<Button text={"Left"} />}
+        rightChild={<Button text={"Right"} />}
+      />
+
       <Button
         text={"123"}
-        type={"DEFAULT"}
         onClick={() => {
           console.log("DEFAULT 버튼 클릭!");
         }}
