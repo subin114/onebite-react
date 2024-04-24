@@ -1,0 +1,39 @@
+@import "./../abstracts/variables";
+
+.EmotionItem {
+  background-color: $emotion-bg-color;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+
+  .emotion_img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+
+.EmotionItem_on_1 {
+  color: $emotion-txt-change-color;
+  background-color: $img-section-01;
+}
+
+.EmotionItem_on_2 {
+  color: $emotion-txt-change-color;
+  background-color: $img-section-02;
+}
+
+.EmotionItem_on_3 {
+  color: $emotion-txt-change-color;
+  background-color: $img-section-03;
+}
+
+.EmotionItem_on_4 {
+  color: $emotion-txt-change-color;
+  background-color: $img-section-04;
+}
+
+.EmotionItem_on_5 {
+  color: $emotion-txt-change-color;
+  background-color: $img-section-05;
+}
