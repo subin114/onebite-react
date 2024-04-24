@@ -1,10 +1,19 @@
-// default
-$gray: gray;
+// button
+$btn-text-color: white;
+$btn-basic-color: rgb(236, 236, 236);
+$btn-positive-color: rgb(100, 201, 100);
+$btn-negative-color: rgb(253, 86, 95);
 
-// main
-$main-color: rgb(37, 145, 255);
-$main-border-color: rgb(220, 220, 220);
+// border
+$header-border-color: rgb(226, 226, 226);
+$diary-border-color: rgb(236, 236, 236);
 
-// list
-$list-border-color: rgb(220, 220, 220);
-$padding-base: 15px;
+// img section
+$img-section-01: rgb(100, 201, 100);
+$img-section-02: rgb(157, 215, 114);
+$img-section-03: rgb(253, 206, 23);
+$img-section-04: rgb(253, 132, 70);
+$img-section-05: rgb(253, 86, 95);
+
+// option select
+$select-bg-color: rgb(236, 236, 236);

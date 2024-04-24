@@ -7,21 +7,29 @@ import New from "./pages/New";
 import Edit from "./pages/Edit";
 import Notfound from "./pages/Notfound";
 
+// mock data 생성
 const mockData = [
   {
     id: 1,
-    createdDate: new Date().getTime(),
+    createdDate: new Date("2024-04-02").getTime(),
     emotionId: 1,
     content: "1번 일기 내용",
   },
   {
     id: 2,
-    createdDate: new Date().getTime(),
+    createdDate: new Date("2024-04-01").getTime(),
     emotionId: 2,
     content: "2번 일기 내용",
   },
+  {
+    id: 3,
+    createdDate: new Date("2024-03-04").getTime(),
+    emotionId: 3,
+    content: "3번 일기 내용",
+  },
 ];
 
+// 일기를 관리하는 reducer 함수 생성
 function reducer(state, action) {
   switch (action.type) {
     case "CREATE":
@@ -37,8 +45,9 @@ function reducer(state, action) {
   }
 }
 
-const DiaryStateContext = createContext();
-const DiaryDispatchContext = createContext();
+// context 생성
+export const DiaryStateContext = createContext();
+export const DiaryDispatchContext = createContext();
 
 function App() {
   const [data, dispatch] = useReducer(reducer, mockData);
